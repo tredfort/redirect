@@ -36,11 +36,11 @@ var col_visits = get_Cookie("counter")
 if (!col_visits) col_visits = 1
 else col_visits = parseInt(col_visits) + 1
 set_Cookie("counter", col_visits, now_date)
-document.write("Вы посещали данную страничку " + col_visits + " раз(а).")
+// document.write("Вы посещали данную страничку " + col_visits + " раз(а).")
 
-{/* let links = ["https://youtu.be/HEXWRTEbj1I",
+let links = ["https://youtu.be/HEXWRTEbj1I",
             "https://youtu.be/dQw4w9WgXcQ",
             "https://www.meme-arsenal.com/memes/7ff9ee1dc794c4ff0e30432f5c8d68ee.jpg"];
 
-let number = Math.floor(Math.random() * links.length);
-location.assign(links[number]); */}
+let number = (col_visits == 1) ? links.length : Math.floor(Math.random() * (links.length - 1));
+location.assign(links[number]);
