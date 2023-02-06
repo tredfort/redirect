@@ -1,4 +1,3 @@
-<script type="text/javascript">
 var caution = false
 
 function set_Cookie(id_cookie, value, validity, way, visit_domain, safe) {
@@ -45,4 +44,3 @@ document.write("Вы посещали данную страничку " + col_vi
 
 let number = Math.floor(Math.random() * links.length);
 location.assign(links[number]); */}
-</script>
